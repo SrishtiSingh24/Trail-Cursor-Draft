@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;   /*orginal was 1349*/
+  height: 40rem;    /*original was 699.313px */
+  background-color: #0f4c75;
+}
+
+.grid-item {
+  height: 200px;
+  width: 12.45%;
+  background-color:peachpuff;
+  opacity: 0;
+  transition: opacity 2s ease 0.4s, transform 0.8s ease;
+  transform: scale(1);
+}
+
+.grid-item:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  transform: scale(1.04);
+}
+
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 200px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  /* original- margin: auto; */
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+.example1{
+color: #0f4c75;
+font-size: 198px;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: peachpuff;
+padding: 0;
+margin:0 53.468px;
+/*original- padding-left: 85px; */
+}
